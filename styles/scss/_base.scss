@@ -72,4 +72,13 @@ body {
   text-rendering: optimizeSpeed;
   display: grid;
   grid-template-rows: 1fr auto;
+
+  @media (min-width: 1140px) {
+    background: {
+      image: url('../../images/bg-top.svg'), url('../../images/bg-bottom.svg');
+      repeat: no-repeat;
+      size: 40rem;
+      position: top right, bottom left;
+    }
+  }
 }

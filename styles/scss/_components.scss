@@ -22,6 +22,12 @@
     background: $gradient-right;
     border-radius: 5rem;
     position: relative;
+    transition: all 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
   }
 
   &__input {
@@ -37,16 +43,26 @@
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    left: 0.3rem;
+    right: 0.3rem;
     transform: translateY(-50%);
+    transition: all 0.3s;
+
+    &.input--is-checked {
+      transform: translate(-2.6rem, -50%);
+    }
   }
 }
 
 .boxes {
   margin: 8rem 0 3rem 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 3rem;
+
+  @media (min-width: 1140px) {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 0;
+  }
 }
 
 .box {
@@ -57,13 +73,25 @@
   &--purple {
     color: $color-secondary--light;
     background-image: $gradient-bottom;
+
+    @media (min-width: 1140px) {
+      padding: 6rem 3rem;
+    }
+
+    & .box__item {
+      border-top-color: rgba($color-primary--light, 0.4);
+
+      &:last-child {
+        border-color: rgba($color-primary--light, 0.4);
+      }
+    }
   }
 
   &__caption {
     font-size: 1.8rem;
   }
 
-  &__amount {
+  &__price {
     color: $color-primary--dark;
     font-size: 7rem;
     margin: 2rem 0 2.2rem 0;
@@ -71,6 +99,14 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+
+    transition: all 0.8s;
+
+    &.price--is-visible {
+      opacity: 0;
+      visibility: hidden;
+      transition: unset;
+    }
 
     &-span {
       font-size: 4rem;
@@ -98,18 +134,29 @@
   &__btn {
     width: 100%;
     background-image: $gradient-right;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    border: 0.1rem solid transparent;
     border-radius: 0.5rem;
     padding: 1.5rem 0;
     margin-top: 3rem;
     display: inline-block;
+    transition: color 0.3s, border 0.3s, transform 0.3s;
 
     &:link,
     &:visited {
       color: $color-secondary--light;
-      font-size: 1.2rem;
-      letter-spacing: 0.2rem;
       text-decoration: none;
       text-transform: uppercase;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-tertiary;
+      background-image: unset;
+      background-color: $color-secondary--light;
+      border: 0.1rem solid $color-tertiary;
+      transform: translateY(0.5rem);
     }
 
     &--white {
@@ -118,6 +165,13 @@
         color: $color-tertiary;
         background-image: unset;
         background-color: $color-secondary--light;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-secondary--light;
+        background-color: transparent;
+        border: 0.1rem solid $color-secondary--light;
       }
     }
   }
@@ -131,12 +185,12 @@
   &__link:link,
   &__link:visited {
     text-transform: uppercase;
-    // color: $color-primary--light;
+    color: $color-tertiary;
     transition: all 0.3s;
   }
 
   &__link:hover,
   &__link:active {
-    // color: $color-secondary;
+    color: $color-primary;
   }
 }
