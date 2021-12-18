@@ -71,36 +71,36 @@
   background-color: $color-secondary--light;
   border-radius: 1rem;
   padding: 3.5rem 3rem 3rem 3rem;
-  // NOTE:
-  // transform: translateX(-50rem);
 
-  // &:nth-child(1) {
-  //   animation: slide-in 1s ease-in-out 0.1s alternate forwards;
-  // }
+  transform: translateX(-50rem);
 
-  // &:nth-child(2) {
-  //   animation: slide-in 1s ease-in-out 0.3s alternate forwards;
-  // }
+  &:nth-child(1) {
+    animation: slide-in 1s ease-in-out 0.1s alternate forwards;
+  }
 
-  // &:nth-child(3) {
-  //   animation: slide-in 1s ease-in-out 0.5s alternate forwards;
-  // }
+  &:nth-child(2) {
+    animation: slide-in 1s ease-in-out 0.3s alternate forwards;
+  }
 
-  // @media (min-width: 1140px) {
-  //   transform: translateX(-150rem);
+  &:nth-child(3) {
+    animation: slide-in 1s ease-in-out 0.5s alternate forwards;
+  }
 
-  //   &:nth-child(1) {
-  //     animation: slide-in 1s ease-in-out 0.5s alternate forwards;
-  //   }
+  @media (min-width: 1140px) {
+    transform: translateX(-150rem);
 
-  //   &:nth-child(2) {
-  //     animation: slide-in 1s ease-in-out 0.3s alternate forwards;
-  //   }
+    &:nth-child(1) {
+      animation: slide-in 1s ease-in-out 0.5s alternate forwards;
+    }
 
-  //   &:nth-child(3) {
-  //     animation: slide-in 1s ease-in-out 0.1s alternate forwards;
-  //   }
-  // }
+    &:nth-child(2) {
+      animation: slide-in 1s ease-in-out 0.3s alternate forwards;
+    }
+
+    &:nth-child(3) {
+      animation: slide-in 1s ease-in-out 0.1s alternate forwards;
+    }
+  }
 
   &--purple {
     color: $color-secondary--light;
@@ -226,35 +226,34 @@
   }
 }
 
-// NOTE:
-// @keyframes slide-in {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(-150rem);
-//   }
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-150rem);
+  }
 
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0);
-//   }
-// }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-// @keyframes fade-in {
-//   0% {
-//     opacity: 0;
-//   }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
 
-//   100% {
-//     opacity: 1;
-//   }
-// }
+  100% {
+    opacity: 1;
+  }
+}
 
-// @keyframes movement {
-//   0% {
-//     background-position: top -1rem right, bottom -1rem left;
-//   }
+@keyframes movement {
+  0% {
+    background-position: top -1rem right, bottom -1rem left;
+  }
 
-//   100% {
-//     background-position: top right, bottom left;
-//   }
-// }
+  100% {
+    background-position: top right, bottom left;
+  }
+}
