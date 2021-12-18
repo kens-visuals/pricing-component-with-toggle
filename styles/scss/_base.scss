@@ -80,5 +80,7 @@ body {
       size: 40rem;
       position: top right, bottom left;
     }
+
+    animation: movement 1s ease-in-out infinite alternate forwards;
   }
 }

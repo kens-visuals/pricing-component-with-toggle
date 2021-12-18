@@ -58,6 +58,7 @@ body {
     background-repeat: no-repeat;
     background-size: 40rem;
     background-position: top right, bottom left;
+    animation: movement 1s ease-in-out infinite alternate forwards;
   }
 }
 
@@ -68,6 +69,9 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  animation: fade-in 0.8s ease-in-out alternate forwards;
+}
 .header__heading {
   margin: 6.5rem 0 3.8rem 0;
 }
@@ -150,7 +154,7 @@ body {
 }
 .box__price {
   color: #494c5f;
-  font-size: 7rem;
+  font-size: clamp(6rem, 10vw, 7rem);
   margin: 2rem 0 2.2rem 0;
   display: flex;
   align-items: center;

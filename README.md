@@ -1,6 +1,6 @@
-# Frontend Mentor - PROJECT NAME Solution
+# Frontend Mentor - Pricing Component with Toggle Solution
 
-This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LINK).
+This is a solution to the [Pricing Component with Toggle Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC).
 
 ## Table of contents
 
@@ -11,7 +11,6 @@ This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LI
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -21,8 +20,8 @@ This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LI
 
 Users should be able to:
 
-- OBJECTIVE_1
-- OBJECTIVE_2
+- View the optimal layout for the component depending on their device's screen size
+- Control the toggle with both their mouse/trackpad and their keyboard
 
 ### Screenshot
 
@@ -30,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [TO_BE_UPDATED](TO_BE_UPDATED)
+- Live Site URL: [https://kens-visuals.github.io/pricing-component-with-toggle/](https://kens-visuals.github.io/pricing-component-with-toggle/)
 - Solution URL: [TO_BE_UPDATED](TO_BE_UPDATED)
 
 ## My process
@@ -41,38 +40,17 @@ Users should be able to:
 - SCSS custom properties
 - CSS Flexbox
 - CSS Grid
+- CSS Animations
+- Vanilla JS
 - Mobile-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Another simple project to practice some other skills other than layout. I've been putting a lot of work towards practicing animations. And this project was not an exception. I could finish the project with the bonus challenge and build it with HTML and CSS. However, I really wanted to make it more interactive. Every developer knows that when you want to make something interactive, JS is the ultimate tool for that. And adding these animations might have been possible with the checkbox hack, but I wanted something more professional.
 
 ### Useful resources
 
-- [TO_BE_UPDATED]() - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [TO_BE_UPDATED]() - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [The “Checkbox Hack”](https://css-tricks.com/the-checkbox-hack/) - In case if you were wondering what you can do with the checkbox hack.
 
 ## Author
 
