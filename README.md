@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [https://kens-visuals.github.io/pricing-component-with-toggle/](https://kens-visuals.github.io/pricing-component-with-toggle/)
-- Solution URL: [TO_BE_UPDATED](TO_BE_UPDATED)
+- Solution URL: [https://www.frontendmentor.io/solutions/pricing-component-with-toggle-with-vanilla-js-scss-and-bem-ylbwbfjvO](https://www.frontendmentor.io/solutions/pricing-component-with-toggle-with-vanilla-js-scss-and-bem-ylbwbfjvO)
 
 ## My process
 
